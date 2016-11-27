@@ -1,15 +1,27 @@
 <?php
 /**
- * Plugin Name: LOAD MORE POSTS V2
+ * Plugin Name: LOAD MORE POSTS
  * Description: Chargement de la suite des Posts
  * Version: 0.1
- * Author: Quentin FAURE 2ADEV @ EEMI
- * Author URI: http://www.quentinfaure.com.
+ * Author: Romain PEYRET 2ADEV @ EEMI
+* Plugin URI: http://localhost
+* Description: Devoir wordpress
+*License: GPL2
+*License URI:
+*Text Domain: loadmore
+*Domain Path: /languages
  */
 
  /**
   * Initialisation
   */
+
+require_once dirname(__FILE__).'/library/class.settings-api.php';
+require_once dirname(__FILE__).'/inc/admin/procedural-example.php';
+
+
+
+
  function load_more()
  {
      global $wp_query;
